@@ -1,0 +1,116 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+html{
+    background-color: black;
+
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;   
+    margin: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+
+
+li{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+   
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+    color:white;
+
+}
+
+a:before{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    height: 3px;
+    width: 0%;
+    top: -5px;
+    
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    height: 3px;
+    width: 0%;
+    bottom: -5px;
+    right: 0;
+}
+
+a:hover::after{
+    width: 50%;
+    -webkit-transition: width 0.7s ease-in-out;
+    -o-transition: width 0.7s ease-in-out;
+    transition: width 0.7s ease-in-out;
+}
+
+a:hover::before{
+    width: 50%;
+    -webkit-transition: width .7s ease-in-out;
+    -o-transition: width .7s ease-in-out;
+    transition: width .7s ease-in-out;
+}
+
+
+.login{
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 15px;
+}
+.login:hover{
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+    -webkit-transition:  1s ease-in  ;
+    -o-transition:  1s ease-in  ;
+    transition:  1s  ease-in ;
+    
+}
+
+.login:hover::before,.login:hover::after{
+    width: 0px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+a:active::before,
+a:active::after {
+  width: 0;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+a:active{
+    background-color: crimson;
+    padding:10px;
+    border-radius: 15px;
+}
+
