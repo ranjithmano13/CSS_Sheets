@@ -12,16 +12,18 @@ body{
   box-shadow: 1rem 1rem 2rem black;
   background-color: teal;
   padding: 20px;
-  color:white;
+  color:teal;
   border-radius: 20px;
   transform: rotateY(-30deg) rotateX(45deg) ;
   transform-style: preserve-3d;
-  transition: 2s ease-out transform;
+  transition: 2s ease;
 }
 
 .container:hover{
   transform: scale(1);
-  transition: 2s ease transform;
+  
+  color: white;
+  transition: 2s ease ;
 }
 
 .container::before{
